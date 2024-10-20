@@ -1277,3 +1277,231 @@ footer .social-icons a img {
         transform: translateY(0);
     }
 }
+
+
+
+
+
+/*Contact US */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-container textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-container button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-container button:hover {
+    background-color: #218838;
+}
+
+#form-status {
+    margin-top: 10px;
+    color: #28a745;
+}
+
+
+
+
+
+/* For Youth */
+
+
+/* Youth Welcome Section */
+.youth-welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #e0f7fa;
+}
+
+.youth-welcome-text {
+    flex: 1;
+}
+
+.youth-welcome-text h1 {
+    font-size: 36px;
+    color: #00796b;
+}
+
+.youth-welcome-text p {
+    font-size: 18px;
+    color: #004d40;
+}
+
+.youth-welcome-image {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Resources Section */
+.interactive-resources {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff3e0;
+}
+
+.resources-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resource-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-10px);
+}
+
+.resource-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.resource-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resource-link:hover {
+    background-color: #e65100;
+}
+
+/* Games Section */
+.games {
+    padding: 50px;
+    background-color: #f0f4c3;
+    text-align: center;
+}
+
+.game-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+}
+
+.game-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.game-link:hover {
+    background-color: #2e7d32;
+}
+
+/* Helpful Links Section */
+.helpful-links {
+    padding: 50px;
+    background-color: #e1bee7;
+    text-align: center;
+}
+
+.link-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.link-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.link-card h3 {
+    margin-bottom: 10px;
+}
+
+.link-card a {
+    text-decoration: none;
+    color: #673ab7;
+    font-weight: bold;
+}

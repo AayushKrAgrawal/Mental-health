@@ -175,3 +175,54 @@ document.querySelectorAll('.service-card').forEach(card => {
         card.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
     });
 });
+
+
+
+
+
+/* Contact US*/ 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (name && email && message) {
+        document.getElementById("form-status").innerText = "Thank you for your message. We'll get back to you soon!";
+        document.getElementById("contactForm").reset();
+    } else {
+        document.getElementById("form-status").innerText = "Please fill in all fields.";
+    }
+});
+
+
+
+/* For Youth */
+
+
+
+// Scroll reveal animation for sections
+window.addEventListener("scroll", function () {
+    const elements = document.querySelectorAll(".resource-card, .game-card, .link-card");
+    const screenHeight = window.innerHeight;
+
+    elements.forEach((element) => {
+        const elementPosition = element.getBoundingClientRect().top;
+        if (elementPosition < screenHeight - 100) {
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+        }
+    });
+});
+
+// Set initial opacity and position for animation
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".resource-card, .game-card, .link-card");
+
+    elements.forEach((element) => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(100px)";
+        element.style.transition = "opacity 0.6s ease-out, transform 0.6s ease-out";
+    });
+});
