@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Help Tools</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="mental-health-problems.html">Mental Health Problems</a></li>
+            <li><a href="self-help-tools.html">Self-Help</a></li>
+            <li><a href="archives.html">Archives</a></li>
+            <li><a href="youth.html">For-Youth</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Self-Help Tools</h1>
+        <p>Empower Yourself with Interactive Tools for a Healthier Mind</p>
+    </header>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <h2>Interactive Tools for Your Mental Well-Being</h2>
+
+        <!-- Mood Tracking Section -->
+        <div class="tool mood-tracking">
+            <h3>Track Your Mood</h3>
+            <p>How are you feeling today? Select your current mood to help track your emotional patterns.</p>
+            <div class="mood-icons">
+                <button class="mood-btn" data-mood="happy"><img src="assets/images/happy.jpg" alt="Happy"> Happy</button>
+                <button class="mood-btn" data-mood="sad"><img src="assets/images/sad.jpg" alt="Sad"> Sad</button>
+                <button class="mood-btn" data-mood="anxious"><img src="assets/images/anxious.jpg" alt="Anxious"> Anxious</button>
+                <button class="mood-btn" data-mood="calm"><img src="assets/images/calm.jpg" alt="Calm"> Calm</button>
+            </div>
+            <div class="mood-result">
+                <h4>Your Mood: <span id="mood-result-text">Not Tracked Yet</span></h4>
+            </div>
+        </div>
+
+        <!-- Mindfulness Breathing Exercise Section -->
+        <!-- Mindfulness Breathing Exercise Section -->
+<div class="tool breathing-exercise">
+    <h3>Mindfulness Breathing Exercise</h3>
+    <p>Practice a short breathing exercise to relax and refocus. Follow the guided breathing technique below.</p>
+    <button class="start-exercise-btn" onclick="startBreathingExercise()">Start Breathing Exercise</button>
+    <button class="stop-exercise-btn" onclick="stopBreathingExercise()">Stop Breathing Exercise</button>
+    <div class="breathing-guide">
+        <h4 id="breathing-instruction">Press the button to start.</h4>
+        <div class="breathing-animation"></div>
+    </div>
+</div>
+
+
+        <!-- Guided Meditation Section -->
+        <div class="tool guided-meditation">
+            <h3>Guided Meditation</h3>
+            <p>Take a moment to ground yourself with a guided meditation session. Choose the duration that works for you.</p>
+            <div class="meditation-buttons">
+                <button onclick="startMeditation(5)">5-Minute Meditation</button>
+                <button onclick="startMeditation(10)">10-Minute Meditation</button>
+                <button onclick="startMeditation(15)">15-Minute Meditation</button>
+            </div>
+            <div class="meditation-progress">
+                <h4 id="meditation-status">No session in progress.</h4>
+            </div>
+        </div>
+
+        <!-- Journaling Section -->
+        <div class="tool journaling-prompt">
+            <h3>Journaling Prompt</h3>
+            <p>Reflect on your thoughts and feelings with a journaling exercise. Use the prompt to guide your writing.</p>
+            <div class="journal-prompt">
+                <p id="prompt-text">"What is one thing that made you smile today?"</p>
+            </div>
+            <textarea placeholder="Write your thoughts here..." rows="6"></textarea>
+            <button class="new-prompt-btn" onclick="generateNewPrompt()">New Prompt</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mental Health Awareness. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="assets/images/instagram.jpg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

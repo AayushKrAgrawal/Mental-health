@@ -754,3 +754,526 @@ footer p {
     }
 }
 
+
+
+
+
+
+
+
+/* Self help Tools */
+
+
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00b4d8;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0077b6;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Tools Section */
+.tools-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tools-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Individual Tool Styles */
+.tool {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.tool:hover {
+    transform: translateY(-10px);
+}
+
+/* Mood Tracking Section */
+.mood-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.mood-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.mood-btn img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+.mood-btn:hover img {
+    transform: scale(1.1);
+}
+
+.mood-result h4 {
+    text-align: center;
+    color: #0077b6;
+}
+
+/* Breathing Exercise Section */
+.breathing-exercise {
+    text-align: center;
+}
+
+.start-exercise-btn {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.start-exercise-btn:hover {
+    background-color: #005f8a;
+}
+
+.breathing-animation {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #00b4d8;
+    margin: 20px auto;
+    animation: breatheInOut 6s infinite;
+    visibility: hidden;
+}
+
+@keyframes breatheInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Guided Meditation Section */
+.meditation-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.meditation-buttons button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.meditation-buttons button:hover {
+    background-color: #005f8a;
+}
+
+.meditation-progress {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.meditation-progress h4 {
+    color: #0077b6;
+}
+
+/* Journaling Section */
+.journaling-prompt {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.new-prompt-btn {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.new-prompt-btn:hover {
+    background-color: #005f8a;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* About US */
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-us {
+    position: relative;
+    height: 100vh;
+    background: url('assets/images/about-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #1E90FF;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4169E1;
+}
+
+/* Our Story Section */
+.our-story {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.our-story .content {
+    max-width: 50%;
+}
+
+.our-story h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.our-story p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.story-video {
+    max-width: 40%;
+}
+
+.story-video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+    background-color: #efefef;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.service-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Team Section */
+.team-section {
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.member-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: white;
+    padding: 30px;
+    margin: 10px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.testimonial h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

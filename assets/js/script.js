@@ -96,3 +96,82 @@ document.addEventListener("DOMContentLoaded", function () {
         }, index * 200); // Staggered animation
     });
 });
+
+
+
+
+/* Self help Tools */
+// Mood Tracking Script
+const moodButtons = document.querySelectorAll('.mood-btn');
+const moodResultText = document.getElementById('mood-result-text');
+
+moodButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const selectedMood = button.getAttribute('data-mood');
+        moodResultText.textContent = selectedMood.charAt(0).toUpperCase() + selectedMood.slice(1);
+    });
+});
+
+// Breathing Exercise Script
+let breathingTimeout;
+
+function startBreathingExercise() {
+    const instruction = document.getElementById('breathing-instruction');
+    const animation = document.querySelector('.breathing-animation');
+
+    instruction.textContent = 'Breathe In...';
+    animation.style.visibility = 'visible';
+    
+    breathingTimeout = setTimeout(() => {
+        instruction.textContent = 'Breathe Out...';
+    }, 3000);
+}
+
+function stopBreathingExercise() {
+    const instruction = document.getElementById('breathing-instruction');
+    const animation = document.querySelector('.breathing-animation');
+
+    clearTimeout(breathingTimeout); // Stop the breathing animation
+    instruction.textContent = 'Breathing exercise stopped.';
+    animation.style.visibility = 'hidden'; // Hide the animation
+}
+
+// Guided Meditation Script
+function startMeditation(minutes) {
+    const status = document.getElementById('meditation-status');
+    status.textContent = `Meditation started for ${minutes} minutes...`;
+
+    setTimeout(() => {
+        status.textContent = 'Meditation completed.';
+    }, minutes * 60000);
+}
+
+// Journaling Script
+const prompts = [
+    "What is one thing you're grateful for today?",
+    "What is one challenge you're facing and how can you approach it?",
+    "What do you love most about yourself?",
+    "What is one thing that made you smile today?"
+];
+
+function generateNewPrompt() {
+    const promptText = document.getElementById('prompt-text');
+    const randomIndex = Math.floor(Math.random() * prompts.length);
+    promptText.textContent = prompts[randomIndex];
+}
+
+
+
+
+
+/* About US*/
+// Add more interactivity, animations, or any other advanced effects
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('mouseover', () => {
+        card.style.boxShadow = "0 10px 25px rgba(0, 0, 0, 0.2)";
+    });
+
+    card.addEventListener('mouseout', () => {
+        card.style.boxShadow = "0 5px 15px rgba(0, 0, 0, 0.1)";
+    });
+});
