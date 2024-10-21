@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
 // Wait for the DOM to fully load before executing any scripts
 document.addEventListener('DOMContentLoaded', () => {
     // Add 'loaded' class to body to trigger fade-in effect

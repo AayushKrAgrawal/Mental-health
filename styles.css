@@ -1,109 +1,47 @@
-/* General Styles */
-body, html {
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-    background-color: #f9f9f9; /* Kept the most commonly used background color */
-    scroll-behavior: smooth;
-    overflow-x: hidden; /* Added overflow-x from one of the entries */
-    opacity: 1; /* Start invisible for fade effect */
+    background-color: #f9f9f9;
+    opacity: 0; /* Start invisible for fade effect */
     transition: opacity 1s ease; /* Fade-in effect */
 }
 
-/* Header Styles */
-.header {
-    text-align: center;
-    padding: 40px 20px; /* Consistent padding (used the most common value) */
-    background-color: #0077b6; /* Chose the color used in most cases */
-    color: white;
-    animation: fadeIn 1s ease-in-out; /* Kept the animation */
+/* Fade in effect on load */
+body.loaded {
+    opacity: 1; /* Fully visible when loaded */
 }
 
-.header h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.header p {
-    font-size: 1.2rem;
-}
-
-/* Center all heading elements */
-h1, h2, h3, h4, h5, h6 {
-    text-align: center;
-}
-
-
-/* Navbar Styles */
+/* Navbar */
 .navbar {
-    background-color: #333; /* Consistent background color */
-    padding: 15px; /* Consistent padding */
+    background-color: #333;
+    padding: 15px;
     text-align: center;
-    position: sticky; /* Sticky navbar */
-    top: 0;
-    z-index: 1000;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Flexbox for alignment */
-    justify-content: center;
 }
 
 .navbar ul li {
-    display: inline; /* Inline display for list items */
-    margin-right: 15px; /* Consistent margin */
+    display: inline;
+    margin-right: 15px;
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px; /* Added font size */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions for both hover effects */
+    transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #00b4d8; /* Hover color effect */
-    text-decoration: underline; /* Hover underline effect */
+    color: #00b4d8;
 }
-
-/* Footer Styles */
-footer {
-    background-color: #333; /* Consistent background color */
-    color: white;
-    text-align: center;
-    padding: 20px 0; /* Consistent padding */
-    margin-top: 40px; /* Space above the footer */
-}
-
-footer p {
-    margin: 10px 0; /* Consistent margin for paragraphs */
-}
-
-footer .social-icons {
-    margin-top: 10px; /* Space between footer and social icons */
-}
-
-footer .social-icons a {
-    margin: 0 10px; /* Space between social icon links */
-    transition: opacity 0.3s ease; /* Smooth hover transition */
-}
-
-footer .social-icons a:hover {
-    opacity: 0.7; /* Hover effect */
-}
-
-footer .social-icons img {
-    width: 30px; /* Consistent size for social icons */
-    margin: 0 5px;
-    display: inline-block; /* Align social icons inline */
-}
-
-
 
 /* Welcome Section */
 .welcome-section {
@@ -260,7 +198,90 @@ footer .social-icons img {
     color: #666;
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
 
+footer p {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+
+
+
+
+
+/*Mental Health Problems*/
+
+
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00b4d8;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0077b6;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+/* Center all heading elements */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
 
 /* Problems Section */
 .problems-section {
@@ -307,6 +328,103 @@ footer .social-icons img {
     line-height: 1.6;
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .problem h2 {
+        font-size: 2rem;
+    }
+
+    .problem {
+        padding: 15px;
+    }
+}
+
+
+
+/*Resources page */
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #4CAF50;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #4CAF50;
+    color: white;
+}
 
 /* Resources Section */
 .resources-container {
@@ -398,9 +516,79 @@ footer .social-icons img {
     cursor: pointer;
 }
 
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.social-icons img {
+    width: 24px;
+    margin: 0 10px;
+}
 
 
 
+
+
+/*Story Archives */
+
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00b4d8;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0077b6;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
 
 /* Stories Section */
 .stories-section {
@@ -520,6 +708,117 @@ footer .social-icons img {
     background-color: #005f8a;
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+/* Self help Tools */
+
+
+/* General styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00b4d8;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0077b6;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
 
 /* Tools Section */
 .tools-section {
@@ -609,7 +908,17 @@ footer .social-icons img {
     visibility: hidden;
 }
 
-
+@keyframes breatheInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 /* Guided Meditation Section */
 .meditation-buttons {
@@ -669,7 +978,68 @@ textarea {
     background-color: #005f8a;
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
 
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+/* About US */
+
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
 
 /* About Us Section */
 .about-us {
@@ -878,6 +1248,36 @@ textarea {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 
@@ -1108,62 +1508,10 @@ textarea {
 
 
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .header h1 {
-        font-size: 2.5rem;
-    }
-
-    .problem h2 {
-        font-size: 2rem;
-    }
-
-    .problem {
-        padding: 15px;
-    }
-}
 
 
 
 
 
 
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px); /* Added this for a smooth upward slide in one case */
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-@keyframes slideIn {
-    from {
-        transform: translateY(20px); /* Slide from 20px */
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes breatheInOut {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
